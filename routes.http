@@ -1,0 +1,53 @@
+GET http://localhost:3333/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njg4ODY0MTQsImV4cCI6MTc2ODk3MjgxNCwic3ViIjoiZDc0N2NjODgtNmNiZC00MGU2LTg2MGUtZTZkY2ZhOGZiYWJjIn0.6k2rfTa28xvTdbktq53LXXnuJmD3HMk6WlAxiaRRwvY
+
+###
+
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+  "name": "ExampleName",
+  "email": "example2@email.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+  "email": "example2@email.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:3333/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njg4ODY0MTQsImV4cCI6MTc2ODk3MjgxNCwic3ViIjoiZDc0N2NjODgtNmNiZC00MGU2LTg2MGUtZTZkY2ZhOGZiYWJjIn0.6k2rfTa28xvTdbktq53LXXnuJmD3HMk6WlAxiaRRwvY
+Content-Type: application/json
+
+{
+  "title": "Título Exemplo"
+}
+
+###
+
+PATCH http://localhost:3333/tasks/6a074bcf-09a4-4c2a-8a23-2a732ba773fa/toggle
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njg4ODY0MTQsImV4cCI6MTc2ODk3MjgxNCwic3ViIjoiZDc0N2NjODgtNmNiZC00MGU2LTg2MGUtZTZkY2ZhOGZiYWJjIn0.6k2rfTa28xvTdbktq53LXXnuJmD3HMk6WlAxiaRRwvY
+
+###
+
+PATCH http://localhost:3333/tasks/6a074bcf-09a4-4c2a-8a23-2a732ba773fa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njg4ODY0MTQsImV4cCI6MTc2ODk3MjgxNCwic3ViIjoiZDc0N2NjODgtNmNiZC00MGU2LTg2MGUtZTZkY2ZhOGZiYWJjIn0.6k2rfTa28xvTdbktq53LXXnuJmD3HMk6WlAxiaRRwvY
+Content-Type: application/json
+
+{
+  "title": "exemplo 3"
+}
+
+###
+
+DELETE http://localhost:3333/tasks/1e3640e0-c28d-4b7a-9b96-c32062aa55ee
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njg4ODY0MTQsImV4cCI6MTc2ODk3MjgxNCwic3ViIjoiZDc0N2NjODgtNmNiZC00MGU2LTg2MGUtZTZkY2ZhOGZiYWJjIn0.6k2rfTa28xvTdbktq53LXXnuJmD3HMk6WlAxiaRRwvY
