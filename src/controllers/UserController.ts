@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import { prisma } from "../prisma.ts";
 import { Prisma } from "@prisma/client";
 import bcrypt from 'bcrypt'

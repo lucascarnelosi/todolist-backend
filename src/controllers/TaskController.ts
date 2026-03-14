@@ -1,5 +1,5 @@
 import { prisma } from "../prisma.ts";
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 
 export class TaskController {
   static async create(req: Request, res: Response) {

@@ -1,5 +1,5 @@
 import { prisma } from "../prisma.ts";
-import { Request, Response } from "express";
+import type { Request, Response } from "express";
 import bcrypt from 'bcrypt';
 import { sign, SignOptions } from 'jsonwebtoken';
 import { authConfig } from "../config/auth.ts";
