@@ -1,7 +1,9 @@
 import type { Request, Response } from "express";
 import { prisma } from "../prisma.ts";
-import { Prisma } from "@prisma/client";
+import pkg from "@prisma/client";
 import bcrypt from 'bcrypt'
+
+const { Prisma } = pkg
 
 export class UserController {
   static async create(req: Request, res: Response) {
