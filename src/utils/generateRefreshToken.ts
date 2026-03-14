@@ -1,4 +1,4 @@
-import { prisma } from "@/prisma"
+import { prisma } from "../prisma"
 import { addDays } from "date-fns"
 import { v4 as uuid } from 'uuid'
 

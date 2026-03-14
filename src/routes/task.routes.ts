@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import { TaskController } from '@/controllers/TaskController'
-import { ensureAuthenticated } from '@/middlewares/ensureAuthenticated'
+import { TaskController } from '../controllers/TaskController'
+import { ensureAuthenticated } from '../middlewares/ensureAuthenticated'
 
 const taskRoutes = Router()
 

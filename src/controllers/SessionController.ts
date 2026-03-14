@@ -1,9 +1,9 @@
-import { prisma } from "@/prisma";
+import { prisma } from "../prisma";
 import { Request, Response } from "express";
 import bcrypt from 'bcrypt';
 import { sign, SignOptions } from 'jsonwebtoken';
-import { authConfig } from "@/config/auth";
-import { generateRefreshToken } from "@/utils/generateRefreshToken";
+import { authConfig } from "../config/auth";
+import { generateRefreshToken } from "../utils/generateRefreshToken";
 
 export class SessionController {
   static async create(req: Request, res: Response) {
