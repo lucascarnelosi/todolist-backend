@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { HealthController } from "@/controllers/HealthController.ts";
-import { LogoutController } from "@/controllers/LogoutController.ts";
-import { RefreshTokenController } from "@/controllers/RefreshTokenController.ts";
+import { HealthController } from "../controllers/HealthController.ts";
+import { LogoutController } from "../controllers/LogoutController.ts";
+import { RefreshTokenController } from "../controllers/RefreshTokenController.ts";
 import userRoutes from "./user.routes";
 import sessionRoutes from "./session.routes";
 import taskRoutes from "./task.routes";
