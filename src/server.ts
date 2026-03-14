@@ -7,7 +7,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: 'https://todolist-frontend-rho-six.vercel.app',
+    origin: 'https://todolist-lucas.vercel.app',
     credentials: true
   })
 )
