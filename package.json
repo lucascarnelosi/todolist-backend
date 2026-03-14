@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "node src/server.ts",
+    "build": "prisma generate && tsc",
     "test": "cross-env NODE_ENV=test dotenv -e .env.test jest --runInBand"
   },
   "keywords": [],
