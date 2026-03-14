@@ -12,6 +12,9 @@
     "skipLibCheck": true,
     "moduleResolution": "nodenext",
 
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+
     "paths": {
       "@/*": ["./src/*"]
     }
