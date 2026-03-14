@@ -1,7 +1,7 @@
 import { Request, Response } from "express"
 import { sign } from "jsonwebtoken"
-import { prisma } from "../prisma"
-import { authConfig } from "../config/auth"
+import { prisma } from "../prisma.ts"
+import { authConfig } from "../config/auth.ts"
 
 export class RefreshTokenController {
   static async refresh(req: Request, res: Response) {

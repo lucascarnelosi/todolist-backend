@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express'
 import jwt from 'jsonwebtoken'
-import { authConfig } from '../config/auth'
+import { authConfig } from '../config/auth.ts'
 
 interface TokenPayload {
   sub: string

@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { prisma } from "../prisma";
+import { prisma } from "../prisma.ts";
 
 export class LogoutController {
   static async logout(req: Request, res: Response) {
