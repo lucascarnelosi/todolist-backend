@@ -1,11 +1,13 @@
 import { prisma } from "../prisma.ts";
 import type { Request, Response } from "express";
 import bcrypt from 'bcrypt';
-import { sign, SignOptions } from 'jsonwebtoken';
+import jwt, { type SignOptions } from 'jsonwebtoken';
 import { authConfig } from "../config/auth.ts";
 import { generateRefreshToken } from "../utils/generateRefreshToken.ts";
 
-export class SessionController {
+const { sign } = jwt;
+  
+export class SessionController {                                   
   static async create(req: Request, res: Response) {
     const { email, password } = req.body;
 
